@@ -10,8 +10,8 @@ export default function Home() {
     <main>
       <h1>Home Page</h1>
       <Link href="/about">Go to About Page</Link>
+      <br />
       <Link href="/users">Users</Link>
-
     </main>
   );
 }

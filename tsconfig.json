@@ -1,10 +1,6 @@
 {
   "compilerOptions": {
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -27,9 +23,15 @@
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "app/users/lib/getAllUsers.jsx",
+    "app/layout.jsx",
+    "app/users/page.jsx",
+    "app/about/error.jsx",
+    "app/about/layout.jsx",
+    "app/about/loading.jsx",
+    "app/about/page.jsx",
+    "app/page.jsx"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }

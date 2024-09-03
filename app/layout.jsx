@@ -1,10 +1,9 @@
 import "./globals.css";
-import { Metadata } from "next";
 import { Inter } from "@next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Home Page",
   description: "Home Page description",
   viewport: "width=device-width, initial-scale=1",
@@ -13,7 +12,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({children }) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       {/*
@@ -22,7 +21,7 @@ export default function RootLayout({children }) {
       */}
       <head />
       <body className={inter.className}>
-       {/* <nav>
+        {/* <nav>
           <h1>My Navbar </h1>
         </nav>*/}
         {children}
