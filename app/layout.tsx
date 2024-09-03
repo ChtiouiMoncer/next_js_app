@@ -1,5 +1,8 @@
 import "./globals.css";
 import { Metadata } from "next";
+import { Inter } from "@next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Home Page",
@@ -10,7 +13,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({children }) {
   return (
     <html lang="en">
       {/*
@@ -18,10 +21,10 @@ export default function RootLayout({ children }) {
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>
-        <nav>
+      <body className={inter.className}>
+       {/* <nav>
           <h1>My Navbar </h1>
-        </nav>
+        </nav>*/}
         {children}
       </body>
     </html>
