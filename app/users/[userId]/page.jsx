@@ -3,7 +3,7 @@ import getUserPosts from "../lib/getUserPosts";
 import getAllUsers from "../lib/getAllUsers";
 import { Suspense } from "react";
 import UserPosts from "./components/UserPosts";
-import { notFound } from "next/navigation";
+import { notFound } from "next/navigation"; //notFound user page
 
 //dynamic metadata
 export async function generateMetadata({ params: { userId } }) {
